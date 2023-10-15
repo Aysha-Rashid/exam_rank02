@@ -5,10 +5,12 @@ int main(int argc, char **argv)
 	int i = 0;
 	if (argc == 2)
 	{
-		while((argv[1][i] && argv[1][i] == ' ') || argv[1][i] == '\t')
+		while(argv[1][i])
 			i++;
 		i--;
-		while(argv[1][i] != ' ' && argv[1][i] != '\t')
+		while((i >= 0 && argv[1][i] == ' ') || argv[1][i] == '\t')
+			i--;
+		while(i >= 0 && argv[1][i] != ' ' && argv[1][i] != '\t')
 			i--;
 		i++;
 		while(argv[1][i] && argv[1][i] != ' ' && argv[1][i] != '\t')
