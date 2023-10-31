@@ -20,10 +20,10 @@ int		ft_atoi(const char *str)
 	return ((int)res*sign);
 }
 
-/*
+
 #include<stdio.h>
 int main()
 {
-	printf("%d\n", ft_atoi("Ceci permet de decouvrir le fonctionnement de ton ft_atoi."));
+	printf("%d\n", ft_atoi("-27"));
 
-}*/
+}
