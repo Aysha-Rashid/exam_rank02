@@ -1,15 +1,23 @@
 #include "ft_list_size.h"
 
+<<<<<<< HEAD
 // #include<stdlib.h>
 
 int	ft_list_size(t_list *begin_list)
 {
     int i = 0;
     while (begin_list)
+=======
+int ft_list_size(t_list *begin_list)
+{
+    int i = 0;
+    while(begin_list)
+>>>>>>> c868f6c060394e4fbc66d6d8b3007127a49802ef
     {
         begin_list = begin_list->next;
         i++;
     }
+<<<<<<< HEAD
     return (i);
 }
 
@@ -37,3 +45,7 @@ int	ft_list_size(t_list *begin_list)
 // 	node2 -> next = NULL;	
 // 	printf("%d\n", ft_list_size(node));
 // }
+=======
+    return(i);
+}
+>>>>>>> c868f6c060394e4fbc66d6d8b3007127a49802ef
