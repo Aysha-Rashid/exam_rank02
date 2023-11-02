@@ -12,3 +12,8 @@ lines, or by the start/end of the string.
 Your function must be declared as follows:
 
 char    **ft_split(char *str);
+
+My\0
+name\0
+is\0
+sadiya\0
