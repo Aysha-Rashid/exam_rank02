@@ -1,17 +1,17 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-int is_prime(int nb)
-{
-	int i = 2;
-	while(i < nb)
-	{
-		if (nb % i == 0)
-			return (0);
-		i++;
-	}
-	return (1);
-}
+// int is_prime(int nb)
+// {
+// 	int i = 2;
+// 	while(i < nb)
+// 	{
+// 		if (nb % i == 0)
+// 			return (0);
+// 		i++;
+// 	}
+// 	return (1);
+// }
 
 int main(int argc, char **argv)
 {
@@ -25,7 +25,7 @@ int main(int argc, char **argv)
 			printf("1");
 		while (factor <= num)
 		{
-			if(num % factor == 0 && is_prime(factor))
+			if(num % factor == 0)
 			{
 				if(flag == 1)
 					printf("%d", factor);
