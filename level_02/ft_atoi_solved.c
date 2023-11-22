@@ -6,12 +6,12 @@ int		ft_atoi(const char *str)
 
 	while((str[i] >= 9 && str[i] <= 13) || str[i] == 32)
 		i++;
-	if (str[0] == '-')
+	if (str[i] == '-')
 	{
 		sign = -1;
 		i++;
 	}
-	else if (str[0] == '+')
+	else if (str[i] == '+')
 		i++;
 	while (str[i] >= '0' && str[i] <= '9' && str[i])
 	{
@@ -21,9 +21,9 @@ int		ft_atoi(const char *str)
 }
 
 
-#include<stdio.h>
-int main()
-{
-	printf("%d\n", ft_atoi("-27"));
+// #include<stdio.h>
+// int main()
+// {
+// 	printf("%d\n", ft_atoi("-27"));
 
-}
+// }

@@ -13,12 +13,6 @@ int main(int argc, char **argv)
     while (j < argc)
     {
         int i = 0;
-
-        while (argv[j][i] && (argv[j][i] == ' ' || argv[j][i] == '\t'))
-        {
-            write(1, &argv[j][i], 1);
-            i++;
-        }
         while (argv[j][i])
         {
             while (argv[j][i] != '\0' && (argv[j][i] == ' ' || argv[j][i] == '\t'))
