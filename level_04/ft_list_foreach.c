@@ -2,7 +2,7 @@
 
 void    ft_list_foreach(t_list *begin_list, void (*f)(void *))
 {
-    if (begin_list == 0)
+    if (!begin_list)
         return ;
     while(begin_list)
     {
@@ -10,8 +10,7 @@ void    ft_list_foreach(t_list *begin_list, void (*f)(void *))
         begin_list = begin_list->next;
     }
 }
-
-// #include <stdio.h>
+ #include <stdio.h>
 // #include<stdlib.h>
 // void	int_doubler(void *n)
 // {

@@ -1,21 +1,18 @@
 unsigned char reverse_bits(unsigned char octet)
 {
-	int i = 0;
-	int ans = 0;
-	while (i < 8)
+	int i = 8;
+	unsigned char num;
+	while(i > 0)
 	{
-		ans <<= 1;
-		ans = ans | (octet &1);
-		octet >>=1;
-		i++;
+		num = num * 2 + (octet % 2);
+		octet = octet / 2;
+		i--;
 	}
-	return (ans);
+	return (num);
 }
 
-/*
-#include<stdio.h>
-int main()
-{
-	printf("%d\n", reverse_bits(4));
-
-}*/
+// #include<stdio.h>
+// int main()
+// {
+// 	printf("%d\n", reverse_bits(4));
+// }
