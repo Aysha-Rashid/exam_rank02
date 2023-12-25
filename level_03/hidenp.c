@@ -74,6 +74,11 @@ int main(int argc, char **argv)
 		{
 			while (argv[1][i] != argv[2][j] && argv[2][j])
 				j++;
+			if (argv[1][i] == '\0')
+			{
+				write(1, "1\n", 2);
+				return (0);
+			}
 			if (argv[2][j] == '\0')
 			{
 				write(1, "0\n", 2);
